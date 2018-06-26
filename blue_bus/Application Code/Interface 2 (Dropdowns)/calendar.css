@@ -1,0 +1,368 @@
+/*THE TITLE*/
+.title {
+    font-size: 5vw;
+    font-style: italic;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: thin;
+    color: blue;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+
+.headTitle {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.subTitle {
+    font-size: 3vw;
+    font-style: italic;
+    color: black;
+    margin-top:0vw;
+}
+
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 1vw;
+    margin: 0.5vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+/*THE CALENDAR*/
+#button {
+    background-color: #f1f1f1;
+    border: .2vw solid black;
+    font-size: 2.5vw;
+    color: black;   
+    cursor: pointer; 
+    padding: .99vw;  
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+#button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#button:focus {
+    background-color: #ccc;
+}
+
+
+/* Dropdown Button */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropbtn1, .dropbtn2 {
+    background-color: #f1f1f1;
+    outline: .3vw solid black;
+    color: black;
+    padding: .77vw;
+    font-size: 3vw;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+
+/* Dropdown button on hover & focus */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropbtn1:hover, .dropbtn1:focus, .dropbtn2:hover, .dropbtn2:focus {
+    background-color: #ccc;
+}
+
+/* The dropdown div */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropdown {
+    border-radius: 50px;
+    display: inline-block;
+    background-color: #ccdcff;
+    padding: 3vw;
+    border: .1vw solid black;    
+    font-size: 3vw;
+    max-width: inherit;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    z-index: 0;
+}
+
+
+
+
+/*Operate on the scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 1.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropdown-content {
+    display: none; 
+    position: relative; 
+    border: .1vw solid black;
+    max-height: 10vw;
+    max-width:inherit;
+    overflow: scroll;
+    overflow-x: hidden; /*hide the horizontal scroll*/
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
+    z-index: 1;
+}
+
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropdown-content button {
+    background-color: inherit;
+    max-width: inherit;
+    font-size: 3vw;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw; 
+    transition: 0.3s;    
+}
+
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.dropdown-content button.active {
+    background-color: #ccc;
+}
+
+
+
+/* Show the dropdown menu for menu 1 */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.showdropbtn1 {    
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    position: absolute;
+    
+    min-width: 80vw;
+    max-width: 80vw;
+    z-index: 30;
+}
+
+
+/* source: https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+.showdropbtn1>* {
+  flex: 1 0 100%;
+    margin: 1vw;
+}
+
+
+/* Show the dropdown menu for menu 2 */
+
+/*source: https://www.w3schools.com/howto/howto_js_dropdown.asp */
+.showdropbtn2 {
+
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+
+    position: absolute; 
+    min-width: 80vw;
+    max-width: 80vw;
+    z-index: 2; /*the first drop down menu will go in front of this one because has higher z index*/
+}
+
+/* source: https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+.showdropbtn2>* {
+  flex: 1 0 100%;
+  margin: 1vw;
+}
+
+.dropdownSentence {
+    font-size: 2.5vw;
+    font-style: italic;
+    border-bottom: 0.3vw solid black;
+    margin-top: 25vw;
+    padding-top: 50vw;
+    margin-bottom: 2vw;
+    margin-left: -19vw;
+    align-self: left;
+    
+}
+
+
+.nextBusLeaving {
+    background-color: white;
+    font-size: 2.5vw;
+    border: .1vw solid black;
+    color: black;   
+    padding: 1.5vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.nextLeavingTime {
+    font-size: 4vw;
+    border-bottom: 0.3vw solid black;
+    background-color: #ccdcff;
+    font-style: italic;
+    padding: 1vw;
+}
+
+
+
+/*Make the bus that is next to leave stand out*/
+#nextToLeave { 
+    font-size: 4vw;
+    font-style: italic;
+}
+
+
+
+/*THE PAGE CHANGE BUTTONS*/
+.pageChangeButtons {
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+}
+
+
+.pageChangeButtons button:hover {
+    background-color: #ddd;
+}
+
+
+.setCustomAlarm {
+    background-color: #ccc;
+    padding-right: 20vw;
+}
+
+
+.presetAlarmSettings {
+    background-color: #ccc;
+    padding-left: 20vw;
+}
+
+
+.blueBusSchedule {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+
+.outsideButton button {
+    background-color: #f1f1f1;
+    border: .1vw solid black;
+    font-size: 1.5vw;
+    color: black;   
+    cursor: pointer; 
+    padding: .99vw;  
+    margin-left: 10vw;
+    margin-right: 0vw;
+    margin-top: 0vw;
+    margin-bottom: 1vw;
+    transition: 0.3s;
+}
+
+#officialBlueButton {
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+}
+
+
+.outsideButton button:hover {
+    background-color: #ddd;
+}
+
+
+.outsideButton button:focus {
+    background-color: #ccc;
+}
+
+
+#setAlarm {
+    border: .1vw solid black;
+    text-decoration: none;
+    background-color: lightgreen;
+    height: 3vw;
+    width: 3vw;    
+    cursor: pointer; 
+    padding: .99vw;  
+    margin-left: .7vw;
+    margin-right: .7vw;
+    margin: 1vw;
+    
+}
+
+
+/* Style the tab content */
+
+/* source: https://www.w3schools.com/howto/howto_js_tabs.asp */
+.tabContent {
+    display: none;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 6vw;
+    margin-top: 0vw;
+    padding-top: 0vw;
+    border: .3vw solid black;
+}
+
+
+/* source https://www.w3schools.com/howto/howto_js_tabs.asp */
+.tab {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0vw;
+    outline: .1vw solid black;
+    background-color: #f1f1f1;
+}
+
+
+/* source https://www.w3schools.com/howto/howto_js_tabs.asp */
+.tab button {
+    background-color: inherit;
+    font-size: 2.5vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 3.3vw;
+    padding-right: 3.3vw;
+    transition: 0.3s;    
+}
+
+
+/* source https://www.w3schools.com/howto/howto_js_tabs.asp */
+.tab button:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+
+<html lang ="en">
+
+	<head>
+		<link rel="stylesheet" href="alarm clock.css">
+		<script type="text/javascript" src="alarm clock.js"></script>
+		<meta charset="utf-8"> 
+        <meta name="description" content="alarm clock.">     
+		<title>View My Alarms</title>
+	</head>
+
+<!------------------------------------------------------------------------------------------------->    
+        
+	<body>
+        <!THE TITLE>
+            <a name = "top">
+            <div class="title" id = "title">
+                <h1 class = "headTitle">b l u b u s</h1>
+                    <p class = smallTitle>View My Alarms</p>
+            </div>
+            </a>
+            
+		<!PAGE CHANGE BUTTONS>
+     	<div class = "pageChangeButtons">
+			<button class = "home"; id = "homebutton">View Main Schedule and Set Alarms</button>
+			<p></p>
+			<script type="text/javascript">
+    			document.getElementById("homebutton").onclick = function () {
+        		location.href = "mycalendar.html";
+    			};
+			</script>
+
+			<button class = "presetAlarmSettings"; id = "button" onClick="document.getElementById('PresetAlarmsTitle').scrollIntoView();">Preset Alarm Settings</button>
+          	<button class = "setCustomAlarm"; id = "button" onClick="document.getElementById('CustomAlarmsTitle').scrollIntoView();">Set Custom Alarms</button>
+      	</div>
+
+			
+		<!THE COLLEGE>
+            <div class="tab">
+                <button class = "tablinksCollege" onclick="openCollege(event, 'BrynMawrOpen', 'BrynMawr')" id = "BrynMawr">View My <span id = "bmc" style="color:gold" >BMC</span> Alarms</button>
+                <button class = "tablinksCollege" onclick="openCollege(event, 'HaverfordOpen', 'Haverford')" id = "Haverford">View My <span id = "hc" style="color:crimson">HC</span> Alarms</button>
+            </div>
+
+
+<!-------------------------------------------------------------------------------------------------> 
+	
+		<!SUBPAGE OF BRYN MAWR TAB>
+        <div id = "BrynMawrOpen" class = "tabContent">
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+              	<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+                <button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+            </div>
+			
+        </div>
+
+            
+            
+        
+            
+        <!SUBPAGE OF HAVERFORD TAB>    
+        <div id = "HaverfordOpen" class = "tabContent">        
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button> 
+            </div>
+        </div>
+			
+	<!-------------------------------------------------------------------------------------------------> 
+																					
+		<div id = "BMCMondayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCMondayAlarms">
+					<p class = "subtitle" >Your BMC Monday alarms:</p>
+					<p class = "smallTitle" id = "BMCMonPreset"></p>
+					<p class = "subtitle" id = "BMCMonCustom"></p>
+				</div>
+            </div>
+
+
+            
+		<div id = "BMCTuesdayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCTuesdayAlarms">
+					<p class = "subtitle">Your BMC Tuesday alarms:</p>
+					<p class = "smallTitle" id = "BMCTuesPreset"></p>
+					<p class = "subtitle" id = "BMCTuesCustom"></p>
+				</div>
+			
+		</div>
+			
+        <div id = "BMCWednesdayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+				<div class="BMCWednesdayAlarms">
+					<p class = "subtitle">Your BMC Wednesday alarms:</p>
+					<p class = "smallTitle" id = "BMCWedPreset"></p>
+					<p class = "subtitle" id = "BMCWedCustom"></p>
+				</div>
+			
+			
+			</div>
+            
+		<div id = "BMCThursdayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCThursdayAlarms">
+					<p class = "subtitle">Your BMC Thursday alarms:</p>
+					<p class = "smallTitle" id = "BMCThursPreset"></p>
+					<p class = "subtitle" id = "BMCThursCustom"></p>
+				</div>
+			
+		</div>
+     
+		<div id = "BMCFridayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCFridayAlarms">
+					<p class = "subtitle">Your BMC Friday alarms:</p>
+					<p class = "smallTitle" id = "BMCFriPreset"></p>
+					<p class = "subtitle" id = "BMCFriCustom"></p>
+				</div>
+		
+		</div>
+     
+		<div id = "BMCSaturdayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCSaturdayAlarms">
+					<p class = "subtitle">Your BMC Saturday alarms:</p>
+					<p class = "smallTitle" id = "BMCSatPreset"></p>
+					<p class = "subtitle" id = "BMCSatCustom"></p>
+				</div>
+			
+		</div>
+     
+		<div id = "BMCSaturdayNightOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCSaturdayNightAlarms">
+					<p class = "subtitle">Your BMC Saturday Night alarms:</p>
+					<p class = "smallTitle" id = "BMCSatNightPreset"></p>
+					<p class = "subtitle" id = "BMCSatNightCustom"></p>
+				</div>
+
+		</div>
+     
+		<div id = "BMCSundayOpen" class = "tabContent">
+
+			<!THE DAYS OF THE WEEK>
+				<div class = "daysOfWeek">
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCMondayOpen', 'BrynMawr')" id = "Monday">Monday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCTuesdayOpen', 'BrynMawr')" id = "Tuesday">Tuesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCWednesdayOpen', 'BrynMawr')" id = "Wednesday">Wednesday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCThursdayOpen', 'BrynMawr')" id = "Thursday">Thursday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCFridayOpen', 'BrynMawr')" id = "Friday">Friday</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayOpen', 'BrynMawr')" id = "Saturday">Saturday </button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSaturdayNightOpen', 'BrynMawr')" id = "SaturdayNight">Saturday Night</button>
+						<button class = "tablinks" onclick = "openSchedule(event, 'BMCSundayOpen', 'BrynMawr')" id = "Sunday">Sunday</button> 
+				</div>
+			
+				<div class="BMCSundayAlarms">
+					<p class = "subtitle">Your BMC Sunday alarms:</p>
+					<p class = "smallTitle" id = "BMCSunPreset"></p>
+					<p class = "subtitle" id = "BMCSunCustom"></p>
+				</div>
+			
+		</div>
+     
+			
+<!HCMONDAY>
+        <div id = "HCMondayOpen" class = "tabContent">        
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCMondayAlarms">
+					<p class = "subtitle">Your HC Monday alarms:</p>
+					<p class = "smallTitle" id = "HCMonPreset"></p>
+					<p class = "subtitle" id = "HCMonCustom"></p>
+				</div>
+
+			
+        </div>
+            
+<!HCTUESDAY>            
+        <div id = "HCTuesdayOpen" class = "tabContent">
+       <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCTuesdayAlarms">
+					<p class = "subtitle">Your HC Tuesday alarms:</p>
+					<p class = "smallTitle" id = "HCTuesPreset"></p>
+					<p class = "subtitle" id = "HCTuesCustom"></p>
+				</div>
+			
+			
+		</div>
+       
+            
+<!HCWEDNESDAY>            
+        <div id = "HCWednesdayOpen" class = "tabContent">
+       <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCWednesdayAlarms">
+					<p class = "subtitle">Your HC Wednesday alarms:</p>
+					<p class = "smallTitle" id = "HCWedPreset"></p>
+					<p class = "subtitle" id = "HCWedCustom"></p>
+				</div>
+			
+			
+        </div>
+            
+<!HCTHURSDAY>    
+        <div id = "HCThursdayOpen" class = "tabContent">
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCThursdayAlarms">
+					<p class = "subtitle">Your HC Thursday alarms:</p>
+					<p class = "smallTitle" id = "HCThursPreset"></p>
+					<p class = "subtitle" id = "HCThursCustom"></p>
+				</div>
+			
+			
+		</div>
+
+<!HCFRIDAY>            
+        <div id = "HCFridayOpen" class = "tabContent">
+        <!THE DAYS OF THE WEEK>
+       <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCFridayAlarms">
+					<p class = "subtitle">Your HC Friday alarms:</p>
+					<p class = "smallTitle" id = "HCFriPreset"></p>
+					<p class = "subtitle" id = "HCFriCustom"></p>
+				</div>
+			
+			
+        </div>
+    
+
+<!HCSATURDAY>            
+        <div id = "HCSaturdayOpen" class = "tabContent">            
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCSaturdayAlarms">
+					<p class = "subtitle">Your HC Saturday alarms:</p>
+					<p class = "smallTitle" id = "HCSatPreset"></p>
+					<p class = "subtitle" id = "HCSatCustom"></p>
+				</div>
+			
+			
+        </div>
+
+
+<!HCSATURDAYNIGHT>            
+        <div id = "HCSaturdayNightOpen" class = "tabContent">            
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCSaturdayNightAlarms">
+					<p class = "subtitle">Your HC Saturday Night alarms:</p>
+					<p class = "smallTitle" id = "HCSatNightPreset"></p>
+					<p class = "subtitle" id = "HCSatNightCustom"></p>
+				</div>
+			
+
+        </div>
+
+<!HCSUNDAY>            
+        <div id = "HCSundayOpen" class = "tabContent">            
+        
+        <!THE DAYS OF THE WEEK>
+            <div class = "daysOfWeek">
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCMondayOpen', 'Haverford')" id = "Monday">Monday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCTuesdayOpen', 'Haverford')" id = "Tuesday">Tuesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCWednesdayOpen', 'Haverford')" id = "Wednesday">Wednesday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCThursdayOpen', 'Haverford')" id = "Thursday">Thursday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCFridayOpen', 'Haverford')" id = "Friday">Friday</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayOpen', 'Haverford')" id = "Saturday">Saturday </button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSaturdayNightOpen', 'Haverford')" id = "SaturdayNight">Saturday Night</button>
+                    <button class = "tablinks" onclick = "openSchedule(event, 'HCSundayOpen', 'Haverford')" id = "Sunday">Sunday</button>
+            </div>
+ 				<div class="HCSundayAlarms">
+					<p class = "subtitle">Your HC Sunday alarms:</p>
+					<p class = "smallTitle" id = "HCSunPreset"></p>
+					<p class = "subtitle" id = "HCSunCustom"></p>
+				</div>
+
+		</div>
+        
+	<!-------------------------------------------------------------------------------------------------> 
+
+			&nbsp;&nbsp;
+			<div id = "PresetAlarmsTitle" class = "subtitle"> 
+				<h1 style="margin:0vw margin-top: 10px;margin-bottom:0vw;">Preset Alarm Settings</h1>
+				<p style="font-size:2vw;color:grey;">If you would prefer an alarm to go off a certain number of minutes before your bus arrives rather than at its arrival time, choose an interval here. When you choose to set an alarm from the homepage, blubus will automatically set an alarm time however many minutes before that bus's arrival based on your preference.</p>
+				
+
+			</div>
+
+			
+			<div id = "PresetAlarms" class = "border" >
+				<div id = "checkboxes" class = "checkboxes" > 
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">5 minutes: <input type="checkbox" id="myCheck" onchange="fiveminute()"> </p>
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">10 minutes: <input type="checkbox" id="myCheck" onchange="tenminute()"> </p> 
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">15 minutes: <input type="checkbox" id="myCheck" onchange="fifteenminute()"> </p>
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">30 minutes: <input type="checkbox" id="myCheck" onchange="thirtyminute()"> </p>
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">1 hour: <input type="checkbox" id="myCheck" onchange="hour()"> </p>
+					<p></p>
+					<p style="font-size:2vw;color:blue;
+">2 hours: <input type="checkbox" id="myCheck" onchange="twohours()"> </p>
+				</div>
+			</div>
+			
+	<!-------------------------------------------------------------------------------------------------> 
+			
+			<p></p>
+			<p></p>
+			
+			<div id = "CustomAlarmsTitle" class = "subtitle"> 
+				<h1 style="margin:0vw margin-top: 10px;margin-bottom:0vw;">Set Custom Alarms</h1>
+				<p style="font-size:2vw;color:grey;">If you would prefer to set a custom alarm rather than choose from the schedule and use the presets, feel free to do so here in the format HH:MM AM/PM. <br> Your alarm will be viewable within the correct tabs and go off as normal. </p>
+				
+
+			</div>
+			<!--<p id="test">0</p>
+			<p id="test2">0</p>
+			<p id="test3">0</p> -->
+
+
+			<div id = "CustomAlarms" class = "border" >
+			<!-- from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time#Examples -->
+				<form>
+				  <div>
+					  <p></p>
+					<label for="appt-time" style="font-size:2vw;color:blue;">Enter your custom time here. Note that "Saturday Night" starts after 5:00 PM. </label>
+					  <p class="bigInput">
+					 <select style="background-color:white;height:50px;width:150px;font-size:15pt;" id="collegeSelection">
+					  	<option value="Bryn Mawr">Bryn Mawr</option>
+						 <option value="Haverford">Haverford</option>
+					  </select>
+					 <select style="font:Arial; background-color:white;height:50px;width:175px;font-size:15pt;" id="weekday" >
+						<option value="1">Monday</option>
+						<option value="2">Tuesday</option>
+						<option value="3">Wednesday</option>
+						<option value="4">Thursday</option>
+						<option value="5">Friday</option>
+						<option value="6">Saturday</option>
+						<option value="7">Saturday Night</option>
+						<option value="0">Sunday</option>
+					</select>
+					<input style="font:Arial;height:50px;width:125px;font-size:14pt;" class = "alarmtime" id="alarmtime" type="time" name="alarmtime"
+						   > 
+						  <span class="validity"></span></p>
+				  </div>
+				  <div>
+					   <button type="button" id="smallerbutton" onclick="customSaveTime()"><b>Submit</b></button> 
+
+				  </div>
+					<p></p>
+					<div id = "didyoudoitdiv">
+						
+					</div>
+					<p></p>
+				</form>
+				
+				
+			</div>
+
+<!--<p><a href="mycalendar.html">Back to Main Schedule</a></p>-->
+	 <div class = "outsideButton">
+            <p align = "right"><button id="returntotop">Return to Top</button><button id="mainschedbutton">Back to View Main Schedule</button></p>
+			<script type="text/javascript">
+				document.getElementById("returntotop").onclick = function(){
+					document.getElementById('title').scrollIntoView();
+				}
+    			document.getElementById("mainschedbutton").onclick = function () {
+        			location.href = "mycalendar.html";
+    			};
+			</script>
+
+        </div>
+
+<p>&nbsp;</p>
+	
+	</body>
+</html>

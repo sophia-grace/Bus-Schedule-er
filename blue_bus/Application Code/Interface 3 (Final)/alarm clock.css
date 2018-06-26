@@ -1,0 +1,293 @@
+.title {
+    font-size: 6vw;
+    font-style: italic;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: thin;
+    color: blue;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.headTitle {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.bigInput{
+	font-size: 3vw;
+}
+
+.subtitle {
+    font-size: 4vw;
+    color: blue;
+}
+
+.smallTitle {
+    font-size: 3vw;
+    font-style: italic;
+    color: black;
+    margin-top:0vw;
+}
+
+
+.checkboxes {
+	font-size: 2vw;
+    margin: 0vw;
+    padding: 0vw;
+
+}
+
+.border
+{
+	border-style:solid;
+	border-color:black;
+	font-family: "Arial", sans-serif;
+    font-size: 2vw;
+	background-color:#f1f1f1;
+
+
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 1vw;
+    margin: 3vw;
+    text-align: center;
+}
+
+#button, #homebutton {
+    background-color: #f1f1f1;
+    border: .2vw solid black;
+    font-size: 2.5vw;
+    color: black;   
+    cursor: pointer; 
+    padding: .99vw;  
+	margin-left: 1vw;
+    margin-right: 1vw;
+	margin-bottom: 1vw;
+
+    transition: 0.3s;
+}
+
+#smallerbutton {
+    background-color: #f1f1f1;
+    border: .2vw solid black;
+	width:200px;
+	background-color:white;
+    font-size: 2vw;
+    color: blue;
+    cursor: pointer; 
+    padding: .99vw;  
+	margin-left: 1vw;
+    margin-right: 1vw;
+
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+#button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#button:focus {
+    background-color: #ccc;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: .2vw solid black;
+    margin-left: 0.1vw;
+    margin-right: 0.1vw;
+    margin-bottom: 0vw;
+	margin-top:0vw;
+    background-color: #f1f1f1;
+}
+
+
+.tab button {
+    background-color: inherit;
+    font-size: 4vw;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5.25vw;
+    padding-right: 5.25vw;
+    transition: 0.3s;    
+}
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+    border-left: .2vw solid black;
+    border-right: .2vw solid black;
+} 
+
+#BrynMawr {
+    float: left;
+}
+
+
+#Haverford {
+    float: right;
+}
+
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 6vw;
+    margin-top: 0vw;
+    padding-top: 0vw;
+    border: .2vw solid black;
+    border-top: none;
+}
+
+/*THE PAGE CHANGE BUTTONS*/
+.pageChangeButtons {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.pageChangeButtons button:hover {
+    background-color: #ddd;
+}
+
+#bmc {  
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+#hc { 
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+/*THE DAYS*/
+.daysOfWeek {
+    overflow: hidden;
+    border: .2vw solid black;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vw;
+    background-color: #f1f1f1;
+	margin-top: 1vw;
+
+}
+
+
+.daysOfWeek button {
+    background-color: inherit;
+    font-size: 2vw;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    transition: 0.3s;    
+}
+
+
+.daysOfWeek button:hover {
+    background-color: #ddd;
+}
+
+.daysOfWeek button.active {
+    background-color: #ccc;
+    border-left: .2vw solid black;
+    border-right: .2vw solid black;
+} 
+
+
+.blueBusSchedule {
+    font-size: 1.5vw;
+    text-align: center;
+    align-items: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.outsideButton button {
+    background-color: #f1f1f1;
+    border: .2vw solid black;
+    font-size: 1.5vw;
+    color: black;   
+    cursor: pointer; 
+    padding: .99vw;  
+    margin-left: .7vw;
+    margin-right: 0vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 0.3s;
+}
+
+
+.outsideButton button:hover {
+    background-color: #ddd;
+}
+
+
+.outsideButton button:focus {
+    background-color: #ccc;
+}
+
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+	padding:0vw;
+	margin-bottom:0vw;
+}
+
+input[type='checkbox']:checked {
+    background: navy;
+}
+/* from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time#Examples */
+
+input[type="number"] {
+  	width: 1000px;
+	height: 1000px;
+}
+
+input + span {
+  	padding-right: 30px;
+}
+
+input:invalid+span:after {
+	position: absolute;
+	content: '✖';
+	padding-left: 5px;
+}
+
+input:valid+span:after {
+	position: absolute;
+	content: '✓';
+	padding-left: 5px;
+}

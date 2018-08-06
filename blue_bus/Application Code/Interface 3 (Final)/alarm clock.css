@@ -1,5 +1,5 @@
 .title {
-    font-size: 6vw;
+    font-size: 4vw;
     font-style: italic;
     outline-color: black;
     outline-style: solid;
@@ -19,7 +19,9 @@
 }
 
 .subtitle {
-    font-size: 4vw;
+    font-size: 2vw;
+    margin-top: 10vw;
+    margin-bottom: 0vw;
     color: blue;
 }
 
@@ -38,8 +40,7 @@
 
 }
 
-.border
-{
+.border {
 	border-style:solid;
 	border-color:black;
 	font-family: "Arial", sans-serif;
@@ -59,14 +60,13 @@ body {
 #button, #homebutton {
     background-color: #f1f1f1;
     border: .2vw solid black;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     color: black;   
     cursor: pointer; 
     padding: .99vw;  
 	margin-left: 1vw;
     margin-right: 1vw;
 	margin-bottom: 1vw;
-
     transition: 0.3s;
 }
 
@@ -81,7 +81,6 @@ body {
     padding: .99vw;  
 	margin-left: 1vw;
     margin-right: 1vw;
-
     transition: 0.3s;
 }
 
@@ -110,7 +109,7 @@ body {
 
 .tab button {
     background-color: inherit;
-    font-size: 4vw;
+    font-size: 3.8vw;
     float: left;
     border: none;
     outline: none;

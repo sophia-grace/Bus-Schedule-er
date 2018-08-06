@@ -367,26 +367,32 @@ function forInterval(){
 //THE PRESET ALARM BUTTONS ------------------------------------------------------------
 	function fiveminute(college, day, time) {
         sessionStorage.setItem("presetTime", 5);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 	function tenminute() {
         sessionStorage.setItem("presetTime", 10);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 	function fifteenminute() {
         sessionStorage.setItem("presetTime", 15);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 	function thirtyminute() {
         sessionStorage.setItem("presetTime", 30);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 	function hour() {
         sessionStorage.setItem("presetTime", 60);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 	function twohours() {       
         sessionStorage.setItem("presetTime", 120);
+        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
     }
 
 

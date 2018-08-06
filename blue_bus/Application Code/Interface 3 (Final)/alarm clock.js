@@ -637,6 +637,16 @@ function help(){ //help instructions
 	alert("To view buses leaving from Bryn Mawr, click on the tab reading 'Buses from Bryn Mawr'. To view buses leaving from Haverford, click on the tab reading 'Buses from Haverford'. Once you are within a tab, blubus will tell you when the soonest bus is leaving from your college of choice. If you'd like to see the full schedule on a certain day, click on a weekday within the college of your choice. Blubus will then allow you to see which buses are leaving from that college on that day and set alarms based off of those buses' leaving times and your pre-set alarm settings. To adjust your preset alarm settings, click on the button reading 'Preset Alarm Settings'. To set a customized alarm rather than set an alarm based off a blue bus, click on the button reading 'Set Custom Alarms.' To view your already set alarms, click the button reading 'View My Alarms.'");
 }
 
-function gotoAlarms(){
+function gotToCustom(){
+	location.href="alarm clock.html#CustomAlarms";
+}
+
+
+function gotoAlarmsPage(){
 	location.href="alarm clock.html";
+}
+
+
+function gotoPreset(){
+	location.href="alarm clock.html#PresetAlarmsTitle";
 }

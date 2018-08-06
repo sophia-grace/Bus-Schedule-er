@@ -7,6 +7,8 @@
     color: blue;
     margin: 0vw;
     padding: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 .headTitle {
@@ -19,7 +21,7 @@
 }
 
 .subtitle {
-    font-size: 3.4vw;
+    font-size: 3vw;
     margin-top: 10vw;
     margin-bottom: 0vw;
     color: blue;
@@ -70,10 +72,10 @@ body {
     font-size: 1.5vw;
     color: black;   
     cursor: pointer; 
-    padding: .99vw;  
-	margin-left: 1vw;
-    margin-right: 1vw;
-	margin-bottom: 1vw;
+    padding: .99vw; 
+	margin-left: 5vw;
+    margin-right: 5vw;
+	margin-bottom: 3vw;
     transition: 0.3s;
 }
 
@@ -116,13 +118,13 @@ body {
 
 .tab button {
     background-color: inherit;
-    font-size: 3.8vw;
+    font-size: 3.5vw;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding-left: 5.25vw;
-    padding-right: 5.25vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     transition: 0.3s;    
 }
 

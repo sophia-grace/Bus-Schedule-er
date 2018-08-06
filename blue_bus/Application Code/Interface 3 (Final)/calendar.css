@@ -8,6 +8,8 @@
     color: blue;
     margin: 0vw;
     padding: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 .headTitle {
@@ -137,6 +139,7 @@ body {
 
 .nextLeavingTime {
     font-size: 4vw;
+    color: black;
     font-style: italic;
     margin: 0vw;
     padding: 0vw;
@@ -156,6 +159,7 @@ body {
 .pageChangeButtons {
     margin-bottom: 8vw;
     margin-top: 8vw;
+    margin-left, margin-right: 5vw;
 }
 
 

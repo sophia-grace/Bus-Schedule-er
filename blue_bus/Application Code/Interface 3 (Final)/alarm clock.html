@@ -6,8 +6,11 @@
 		<link rel="stylesheet" href="alarm clock.css">
 		<script type="text/javascript" src="alarm clock.js"></script>
 		<meta charset="utf-8"> 
-        <meta name="description" content="alarm clock.">     
+        <meta name="description" content="Bryn Mawr College and Haverford College Bi-Co Blue Bus Scheduler.">     
 		<title>Blue Bus Scheduler Alarms Page</title>
+        
+         
+
 	</head>
 
 <!------------------------------------------------------------------------------------------------->    
@@ -37,8 +40,8 @@
 			
 		<!THE COLLEGE>
             <div class="tab">
-                <button class = "tablinksCollege" onclick="openCollege(event, 'BrynMawrOpen', 'BrynMawr')" id = "BrynMawr">View My <span id = "bmc" style="color:gold" >BMC</span> Alarms</button>
-                <button class = "tablinksCollege" onclick="openCollege(event, 'HaverfordOpen', 'Haverford')" id = "Haverford">View My <span id = "hc" style="color:crimson">HC</span> Alarms</button>
+                <button class = "tablinksCollege" onclick="openCollege(event, 'BrynMawrOpen', 'BrynMawr')" id = "BrynMawr">View My <span id = "bmc" style="color:gold" >Bryn Mawr</span> Alarms</button>
+                <button class = "tablinksCollege" onclick="openCollege(event, 'HaverfordOpen', 'Haverford')" id = "Haverford">View My <span id = "hc" style="color:crimson">Haverford</span> Alarms</button>
             </div>
 
 
@@ -444,34 +447,33 @@
 			<div id = "PresetAlarmsTitle" class = "subtitle"> 
 				<h1 class = "subtitle">Preset Alarm Settings</h1>
 				<p class = "description">If you would prefer an alarm to go off a certain number of minutes before your bus arrives rather than at its arrival time, choose an interval here. When you choose to set an alarm from the homepage, blubus will automatically set an alarm time however many minutes before that bus's arrival based on your preference.</p>
-				
-
-			</div>
 
 			
-			<div id = "PresetAlarms" class = "border" >
-				<div id = "checkboxes" class = "checkboxes" > 
-					<p></p>
-					<p style="font-size:2vw;color:blue;">5 minutes: <input type="checkbox" id="myCheck" onchange="fiveminute()"> </p>
-					<p></p>
-					<p style="font-size:2vw;color:blue;">10 minutes: <input type="checkbox" id="myCheck" onchange="tenminute()"> </p> 
-					<p></p>
-					<p style="font-size:2vw;color:blue;">15 minutes: <input type="checkbox" id="myCheck" onchange="fifteenminute()"> </p>
-					<p></p>
-					<p style="font-size:2vw;color:blue;">30 minutes: <input type="checkbox" id="myCheck" onchange="thirtyminute()"> </p>
-					<p></p>
-					<p style="font-size:2vw;color:blue;">1 hour: <input type="checkbox" id="myCheck" onchange="hour()"> </p>
-					<p></p>
-					<p style="font-size:2vw;color:blue;">2 hours: <input type="checkbox" id="myCheck" onchange="twohours()"> </p>
-				</div>
+			 <div id = "PresetAlarms" class = "border" >
+                 <div id = "checkboxes" class = "checkboxes" > 
+                     <p></p>
+					   <p style="font-size:2vw;color:blue;">5 minutes: <input type="checkbox" id="myCheck" onchange="fiveminute()"> </p>
+					   <p></p>
+					   <p style="font-size:2vw;color:blue;">10 minutes: <input type="checkbox" id="myCheck" onchange="tenminute()"> </p> 
+                     <p></p>
+                     <p style="font-size:2vw;color:blue;">15 minutes: <input type="checkbox" id="myCheck"   onchange="fifteenminute()"> </p>
+                     <p></p>
+                     <p style="font-size:2vw;color:blue;">30 minutes: <input type="checkbox" id="myCheck" onchange="thirtyminute()"> </p>
+                     <p></p>
+                     <p style="font-size:2vw;color:blue;">1 hour: <input type="checkbox" id="myCheck" onchange="hour()"> </p>
+                     <p></p>
+                     <p style="font-size:2vw;color:blue;">2 hours: <input type="checkbox" id="myCheck" onchange="twohours()"> </p>
+                 </div>
                 
-                <p></p>
-                <div id="presetConfirm" style="color: green">
+                 <p></p>
+                 <div id="presetConfirm" style="color: green">
                     
-                </div>
+                 </div>
                 <p></p>
+                
                 
 			</div>
+        </div>
 			
 	<!-------------------------------------------------------------------------------------------------> 
 			
@@ -481,9 +483,6 @@
 			<div id = "CustomAlarmsTitle" class = "subtitle"> 
 				<h1 class = "subtitle">Set Custom Alarms</h1>
 				<p class = "description">If you would prefer to set a custom alarm rather than choose from the schedule and use the presets, feel free to do so here in the format HH:MM AM/PM. <br> Your alarm will be viewable within the correct tabs and go off as normal. </p>
-				
-
-			</div>
 
 
 			<div id = "CustomAlarms" class = "border" >
@@ -524,6 +523,7 @@
 				
 				
 			</div>
+        </div>
 
 <!--<p><a href="mycalendar.html">Back to Main Schedule</a></p>-->
 	 <div class = "outsideButton">
@@ -540,6 +540,9 @@
         </div>
 
 <p>&nbsp;</p>
+ 
 	
 	</body>
+    
+    
 </html>

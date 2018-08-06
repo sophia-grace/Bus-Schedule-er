@@ -16,7 +16,7 @@
         <!THE TITLE>
             <a name = "top">
             <div class="title" id = "title">
-                <h1 class = "headTitle">Blue Bus</h1>
+                <h1 class = "headTitle">Blue Bus Scheduler</h1>
                     <p class = smallTitle>My Bi-Co Blue Bus Alarms</p>
             </div>
             </a>
@@ -442,8 +442,8 @@
 
 			&nbsp;&nbsp;
 			<div id = "PresetAlarmsTitle" class = "subtitle"> 
-				<h1 style="margin:0vw margin-top: 10px;margin-bottom:0vw;">Preset Alarm Settings</h1>
-				<p style="font-size:2vw;color:grey;">If you would prefer an alarm to go off a certain number of minutes before your bus arrives rather than at its arrival time, choose an interval here. When you choose to set an alarm from the homepage, blubus will automatically set an alarm time however many minutes before that bus's arrival based on your preference.</p>
+				<h1 class = "subtitle">Preset Alarm Settings</h1>
+				<p class = "description">If you would prefer an alarm to go off a certain number of minutes before your bus arrives rather than at its arrival time, choose an interval here. When you choose to set an alarm from the homepage, blubus will automatically set an alarm time however many minutes before that bus's arrival based on your preference.</p>
 				
 
 			</div>
@@ -452,24 +452,25 @@
 			<div id = "PresetAlarms" class = "border" >
 				<div id = "checkboxes" class = "checkboxes" > 
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">5 minutes: <input type="checkbox" id="myCheck" onchange="fiveminute()"> </p>
+					<p style="font-size:2vw;color:blue;">5 minutes: <input type="checkbox" id="myCheck" onchange="fiveminute()"> </p>
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">10 minutes: <input type="checkbox" id="myCheck" onchange="tenminute()"> </p> 
+					<p style="font-size:2vw;color:blue;">10 minutes: <input type="checkbox" id="myCheck" onchange="tenminute()"> </p> 
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">15 minutes: <input type="checkbox" id="myCheck" onchange="fifteenminute()"> </p>
+					<p style="font-size:2vw;color:blue;">15 minutes: <input type="checkbox" id="myCheck" onchange="fifteenminute()"> </p>
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">30 minutes: <input type="checkbox" id="myCheck" onchange="thirtyminute()"> </p>
+					<p style="font-size:2vw;color:blue;">30 minutes: <input type="checkbox" id="myCheck" onchange="thirtyminute()"> </p>
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">1 hour: <input type="checkbox" id="myCheck" onchange="hour()"> </p>
+					<p style="font-size:2vw;color:blue;">1 hour: <input type="checkbox" id="myCheck" onchange="hour()"> </p>
 					<p></p>
-					<p style="font-size:2vw;color:blue;
-">2 hours: <input type="checkbox" id="myCheck" onchange="twohours()"> </p>
+					<p style="font-size:2vw;color:blue;">2 hours: <input type="checkbox" id="myCheck" onchange="twohours()"> </p>
 				</div>
+                
+                <p></p>
+                <div id="presetConfirm" style="color: green">
+                    
+                </div>
+                <p></p>
+                
 			</div>
 			
 	<!-------------------------------------------------------------------------------------------------> 
@@ -478,14 +479,11 @@
 			<p></p>
 			
 			<div id = "CustomAlarmsTitle" class = "subtitle"> 
-				<h1 style="margin:0vw margin-top: 10px;margin-bottom:0vw;">Set Custom Alarms</h1>
-				<p style="font-size:2vw;color:grey;">If you would prefer to set a custom alarm rather than choose from the schedule and use the presets, feel free to do so here in the format HH:MM AM/PM. <br> Your alarm will be viewable within the correct tabs and go off as normal. </p>
+				<h1 class = "subtitle">Set Custom Alarms</h1>
+				<p class = "description">If you would prefer to set a custom alarm rather than choose from the schedule and use the presets, feel free to do so here in the format HH:MM AM/PM. <br> Your alarm will be viewable within the correct tabs and go off as normal. </p>
 				
 
 			</div>
-			<!--<p id="test">0</p>
-			<p id="test2">0</p>
-			<p id="test3">0</p> -->
 
 
 			<div id = "CustomAlarms" class = "border" >
@@ -493,7 +491,7 @@
 				<form>
 				  <div>
 					  <p></p>
-					<label for="appt-time" style="font-size:2vw;color:blue;">Enter your custom time here. Note that "Saturday Night" starts after 5:00 PM. </label>
+					<label for="appt-time" style="font-size:1.5vw;color:blue;">Enter your custom time here. Note that "Saturday Night" starts after 5:00 PM. </label>
 					  <p class="bigInput">
 					 <select style="background-color:white;height:50px;width:150px;font-size:15pt;" id="collegeSelection">
 					  	<option value="Bryn Mawr">Bryn Mawr</option>
@@ -518,7 +516,7 @@
 
 				  </div>
 					<p></p>
-					<div id = "didyoudoitdiv">
+					<div id = "didyoudoitdiv" style="color: green">
 						
 					</div>
 					<p></p>

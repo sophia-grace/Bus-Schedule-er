@@ -19,10 +19,17 @@
 }
 
 .subtitle {
-    font-size: 2vw;
+    font-size: 3.4vw;
     margin-top: 10vw;
     margin-bottom: 0vw;
     color: blue;
+}
+
+.description {
+    font-size: 2vw;
+    margin-top, margin-bottom: 0vw;
+    padding-top, padding-bottom: 0vw;
+    color: grey;
 }
 
 .smallTitle {

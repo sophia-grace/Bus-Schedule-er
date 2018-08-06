@@ -367,32 +367,87 @@ function forInterval(){
 //THE PRESET ALARM BUTTONS ------------------------------------------------------------
 	function fiveminute(college, day, time) {
         sessionStorage.setItem("presetTime", 5);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);        
     }
+    
 
 	function tenminute() {
         sessionStorage.setItem("presetTime", 10);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);
     }
 
 	function fifteenminute() {
         sessionStorage.setItem("presetTime", 15);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);
     }
 
 	function thirtyminute() {
         sessionStorage.setItem("presetTime", 30);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);
     }
 
 	function hour() {
         sessionStorage.setItem("presetTime", 60);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);
     }
 
 	function twohours() {       
         sessionStorage.setItem("presetTime", 120);
-        alert("Preset alarm set for " + sessionStorage.getItem("presetTime") + " minutes before bus departure.");
+        
+        //create popup to confirm action
+        var didyoudoit;
+        didyoudoit = document.getElementById("presetConfirm");
+        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        
+        //disappear
+        setTimeout(function() {
+            didyoudoit.innerText = "";
+	   }, 3000);
     }
 
 
@@ -525,14 +580,13 @@ function customSaveTime(){
 
 	var didyoudoit;
 	didyoudoit = document.getElementById("didyoudoitdiv");
-	didyoudoit.innerText = "You submitted a new custom alarm for the bus at " + whichCollege.toUpperCase() + " on " + whichWeekday.toUpperCase() + " at " +whatTime.toUpperCase() + ".";
+	didyoudoit.innerText = "A new custom alarm for the bus at " + whichCollege.toUpperCase() + " on " + whichWeekday.toUpperCase() + " at " +whatTime.toUpperCase() + ".";
 	setTimeout(function() {
   		didyoudoit.innerText = "";
 	}, 3000);
 
 	custom = 1;
 	saveTime();
-
 }
 
 

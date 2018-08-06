@@ -13,14 +13,6 @@ function leavingTime(college) {
     
     found = findNextTime(arrNextTime, currentTime);
     
- 
-    
-  
-    nextTime = "7:55 AM";
-    currentTime = "11:54 PM";
-    found = compareTimes(convertTime12to24(nextTime), convertTime12to24(currentTime));
-    
-    
     
     nextLeavingTime = document.getElementsByClassName("nextLeavingTime");    
     for(i = 0; i < nextLeavingTime.length; i++) {
@@ -35,14 +27,10 @@ function findNextTime(array, now) {
     
     for(i = 0; i < array.length; i++) {
         nextTime = convertTime12to24(array[i].innerHTML);
-        if(compareTimes(nextTime, now) > 0) { //if the next time is greater than the                                                     //current time
-           // found = subtractTimes(nextTime, now);
-          //  return found;
+        if(compareTimes(nextTime, now) > 0) { //if the next time is greater than the current time
             return nextTime;
         }
     } 
-    
-   // return found;
 }
 
 

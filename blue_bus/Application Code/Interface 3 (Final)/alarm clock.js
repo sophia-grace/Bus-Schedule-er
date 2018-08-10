@@ -371,7 +371,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -386,7 +386,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -400,7 +400,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -414,7 +414,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -428,7 +428,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -442,7 +442,7 @@ function forInterval(){
         //create popup to confirm action
         var didyoudoit;
         didyoudoit = document.getElementById("presetConfirm");
-        didyoudoit.innerText = "Preset alarm for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
+        didyoudoit.innerText = "Preset alarm set for " + sessionStorage.getItem("presetTime") + " MINUTES before bus departure.";
         
         //disappear
         setTimeout(function() {
@@ -580,7 +580,7 @@ function customSaveTime(){
 
 	var didyoudoit;
 	didyoudoit = document.getElementById("didyoudoitdiv");
-	didyoudoit.innerText = "A new custom alarm for the bus at " + whichCollege.toUpperCase() + " on " + whichWeekday.toUpperCase() + " at " +whatTime.toUpperCase() + ".";
+	didyoudoit.innerText = "A new custom alarm set for the bus at " + whichCollege.toUpperCase() + " on " + whichWeekday.toUpperCase() + " at " +whatTime.toUpperCase() + ".";
 	setTimeout(function() {
   		didyoudoit.innerText = "";
 	}, 3000);
